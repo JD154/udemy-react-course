@@ -1,15 +1,16 @@
-import React from 'react';
-import Props from './components/Props';
-import Hooks from './components/Hooks';
-import Binding from './components/Binding';
-import List from './components/List'
+import React from "react"
+import Props from "../components/Props"
+import Hooks from "../components/Hooks"
+import Binding from "../components/Binding"
+import List from "../components/List"
+
 function App() {
   return (
     <div className="App">
       <div className="component-section">
         <h1>Using props</h1>
         <h4>hello there</h4>
-        <Props text="General Kenobi"/>
+        <Props text="General Kenobi" />
       </div>
       <div className="component-section">
         <h1>Using useState Hook</h1>
@@ -24,7 +25,7 @@ function App() {
         <List />
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

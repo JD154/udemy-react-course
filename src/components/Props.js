@@ -1,11 +1,13 @@
-import React, { Component } from 'react'
+/* eslint-disable react/prop-types */
+import React from "react"
 
-export default class Props extends Component {
-  render() {
-    return (
-      <div>
-        <p>This is a prop: {this.props.text}</p>
-      </div>
-    )
-  }
+const Props = props => {
+  const { text } = props
+  return (
+    <div>
+      <p>This is a prop: {text}</p>
+    </div>
+  )
 }
+
+export default Props
